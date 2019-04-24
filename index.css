@@ -1,0 +1,352 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	cursor: default;
+}
+#image{
+	background-image: url("image/10.jpg");
+	height: 650px;
+	background-size: cover;
+	background-position: center;
+	/*animation-name: zoom;*/
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-timing-function: ease-out;
+	position: relative;
+	background-color: black;
+	/*filter: sepia(100%);*/
+}
+#hove{
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 1;
+}
+#img{
+	margin-top: 50px;
+	margin-left: 50px;
+	width: 70px;
+}
+@keyframes zoom{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+#text{
+	color: #eeecea;
+	font-family: Catamaran,sans-serif;
+	font-weight: 700;
+	position: absolute;
+	right: 12px;
+	top: 60px;
+	font-size: 18px;
+	transform: rotate(90deg);
+}
+.iss{
+	position: absolute;
+	right: 35px;
+	top: 89%;
+	height: 0;
+	color:  white;
+	border-left: 1px solid #eeecea;
+	animation-name: lengthy;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 0;
+}
+@keyframes lengthy{
+	0%{
+		height: 0px;
+	}
+	50%{
+		height: 70px;
+	}
+	100%{
+		height: 0px;
+	}
+}
+.bordered{
+	/*position: absolute;*/
+	border: 1px solid #988f8a;
+	width: 600px;
+	height: 400px;
+	/*top: 100px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+#image h1{
+	color: #eeecea;
+	font-size: 60px;
+	position: absolute;
+	top: 40%;
+	left: 14%;
+	font-family: 'Austin Web';
+	/*width: 700px;*/
+}
+#image .para{
+	color: #eeecea;
+	font-size: 20px;
+	position: absolute;
+	top: 54%;
+	left: 14%;
+	font-family: 'Austin Web';
+}
+@media only screen and (max-width : 780px){
+	#image h1{
+		left: 3%;
+	}
+}
+@media only screen and (max-width : 600px){
+	.bordered{
+		width: 400px;
+	}
+	#image h1{
+		left: 1%;
+	}
+}
+#image .one8{
+	color:  #eeecea;
+	position: absolute;
+	right: 20px;
+	top: 45%;
+	font-family: Catamaran,sans-serif;
+	/*font-family: 'Austin Web';*/
+	font-size: 18px;
+}
+#move{
+	position: absolute;
+	top: 52%;
+	right: 22px;
+	color:  #eeecea;
+	font-size: 20px;
+	scroll-behavior: smooth;
+}
+#text2{
+	color: #eeecea;
+	font-family: Catamaran,sans-serif;
+	font-weight: 700;
+	position: absolute;
+	right: 2px;
+	top: 80%;
+	font-size: 18px;
+	transform: rotate(90deg);
+}
+.background{
+	background-color: #EEECEA;
+	height: auto;
+}
+#fee{
+	overflow: hidden;
+	margin-top: 100px;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight : 300;
+	/*font-family: 'Austin Web';*/
+	color: #1a1818;
+	font-size: 55px;
+	letter-spacing: 0.4em;
+}
+#fee::after{
+	content: " ";
+	border-bottom: 1px solid #202020;
+	display: block;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+#sec img{
+	width: 100%;
+	height: 400px;
+	transition-property: all;
+	transition-duration: 5s;
+	transition-delay: 0s;
+}
+#downhall{
+	margin-top: 60px;
+}
+/*#sec:hover #im,#sec:focus #im{
+	transform: scale(1.1);
+}*/
+#sec h3{
+	color: #1a1818;
+	font-family: 'Bad Script', cursive;
+	font-size: 25px;
+	font-weight: 700;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+#sec p{
+	color: #1a1818;
+	/*font-family: 'Bad Script', cursive;*/
+	font-size: 19px;
+	font-weight: 400;
+
+}
+#sec{
+	overflow: hidden;
+	/*height: 400px;*/
+}
+.bacimg{
+	/*position: relative;*/
+	background-image: url("image/gallery.jpg");
+	height: 670px;
+	background-position: 50% 50%;
+	/*left: 33.3%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-position: 20% 50%;*/
+}
+/*.gallery-inside{
+	position: absolute;
+	width: 150px;
+	top: 30%;
+	left: 25%;
+}*/
+.rell{
+	position: relative;
+}
+.rell p{
+	font-family: Catamaran,sans-serif;
+	color: #1a1818;
+	padding-top: 40px;
+	font-weight: 700;
+	font-size: 19px;
+}
+#nomargin{
+	padding-right: 0;
+	/*margin-left: 0;*/
+}
+.loop{
+	height: 650px;
+	background-size: cover;
+	background-position: center;
+	/*animation-name: zoom;*/
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-timing-function: ease-out;
+	position: relative;
+}
+#mov{
+	position: absolute;
+	top: 38%;
+	right: 22px;
+	color:  #eeecea;
+	font-size: 20px;
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	#fee{
+		letter-spacing: 0.3em;
+	}
+}
+@media only screen and (max-width: 600px){
+	.bordered{
+		width: 300px;
+	}
+}
+#bor h3{
+	margin: 0;
+	color: #222;
+}
+#jss img{
+	width: 300px;
+	height: 400px;
+	display: none;
+	overflow: hidden;
+}
+#allis::after{
+	content: " ";
+	display: block;
+	border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+	padding-top: 30px;
+}
+.index{
+	position: absolute;
+	z-index: 2;
+	top: 50px;
+	left: 0;
+	right: 0;
+	width: 300px;
+	height: 700px;
+	overflow: hidden;
+}
+#denn{
+	position: relative;
+}
+/*#allis{
+	position: relative;
+}*/
+#jss p{
+	opacity: .99;
+}
+#jss{
+	position: static;
+}
+#see-all{
+	font-size: 15px;
+	/* text-decoration: underline; */
+	margin-top: 20px;
+	text-decoration: underline;
+	text-decoration-color: rgba(150, 150, 150, 0.3);
+	-ms-text-underline-position: under;
+	text-decoration-skip: inherit;
+}
+#Ex{
+	color: #1a1818;
+	font-size: 14px;
+	margin-top: 15px;
+	font-weight: 400;
+}
+#feb{
+	color:  #1A1818;
+	font-size: 25px;
+	font-family: 'Bad Script', cursive;
+	overflow: hidden;
+}
+#feed{
+	overflow: hidden;
+	margin-top: 100px;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight : 300;
+	/*font-family: 'Austin Web';*/
+	color: #1a1818;
+	font-size: 19px;
+	letter-spacing: 0px;
+}
+#feed::after{
+	content: " ";
+	border-bottom: 1px solid #202020;
+	display: block;
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+/* .issd{
+	width: 150px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	color:  white;
+	border-left: 1px solid rgba(150, 150, 150, 0.3);
+} */
+#dd{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#dd h2{
+	font-size: 20px;
+	font-weight: 700;
+}
